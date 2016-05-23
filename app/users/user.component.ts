@@ -1,5 +1,6 @@
 import {Component} from 'angular2/core';
 import {UserService} from './user.service'
+import { RouterLink } from 'angular2/router';
 
 
 @Component({

@@ -12,6 +12,8 @@
 	<script src="node_modules/systemjs/dist/system.src.js"></script>
 	<script src="node_modules/rxjs/bundles/Rx.js"></script>
 	<script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+
 	<script>
 		System.config({
 			packages: {
@@ -25,11 +27,12 @@
 		System.import('app/main').catch(console.error.bind(console));
 	</script>
 </head>
-
+<base href="/">
 <body>
 	<h2>You Should See an Application Loaded Successfully Message Below</h2>
 
 	<ng-app>Loading...</ng-app>
+    <router-outlet></router-outlet>
 </body>
 
 </html>
